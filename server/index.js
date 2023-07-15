@@ -1,13 +1,16 @@
 require("dotenv").config();
 const port = process.env.PORT || 3000;
-const corsURL = process.env.CORS;
+const corsURL1 = process.env.CORS1;
+const corsURL2 = process.env.CORS2;
+
 const io = require("socket.io")(port, {
   cors: {
-    origin: [corsURL],
+    origin: [corsURL1, corsURL2],
   },
 });
 
 io.on("connection", (socket) => {
+  console.log("Server Running");
   socket.on("send-event", (message, room) => {
     console.log(message, room);
     message.time = Date.now();
