@@ -1,8 +1,9 @@
 require("dotenv").config();
 const port = process.env.PORT || 3000;
+const corsURL = process.env.CORS;
 const io = require("socket.io")(port, {
   cors: {
-    origin: ["http://localhost:5173", "https://kchat.netlify.app"],
+    origin: [corsURL],
   },
 });
 
