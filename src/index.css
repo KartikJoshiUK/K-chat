@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: #eeeeee;
+  border-radius: 16px;
+}
+::-webkit-scrollbar-thumb:vertical {
+  height: 10px;
+  background-color: #666;
+  border: 1px solid #eee;
+  border-radius: 16px;
+}
+
+/* QUILL */
+.ql-container {
+  border: none;
+}
+.ql-editor {
+  border: none;
+}

@@ -1,0 +1,34 @@
+.textarea {
+  background-color: #1a1d21;
+  padding: 0.5rem;
+}
+.textarea-container {
+  background-color: #222529;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.text-style {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.3rem;
+}
+.icon-style {
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.1rem;
+  cursor: pointer;
+  color: gray;
+}
+.icon-style:hover {
+  background-color: #41474f;
+}
+.icon-style:active {
+  background-color: #2a2e33;
+}

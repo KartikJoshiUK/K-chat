@@ -1,0 +1,131 @@
+.texteditor {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #1a1d21;
+}
+/* QUILL */
+.quillcss {
+  background-color: #222529;
+  color: #a4a5a7;
+  border-radius: 10px 10px 0 0;
+  /* border: 1px solid gray; */
+}
+.ql-snow {
+  border: none !important;
+}
+.ql-editor {
+  overflow: auto;
+  height: 100%;
+  padding: 0 12px 0 12px;
+}
+.ql-editor::before {
+  color: gray !important;
+}
+.ql-container {
+  height: 40px;
+  max-height: 60px;
+}
+.ql-formats button {
+  font-size: 2rem !important;
+}
+.ql-formats {
+  position: relative;
+}
+.ql-formats + .ql-formats::before {
+  z-index: 1;
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 1px;
+  background-color: gray;
+  top: 0;
+  left: -2px;
+}
+
+.extra-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #222529;
+  padding: 0.5rem;
+  border-radius: 0 0 10px 10px;
+}
+.extra-buttons .features {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+.extra-buttons button {
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.features button {
+  height: 2rem;
+  aspect-ratio: 1/1;
+  background-color: transparent;
+  color: gray;
+}
+.features button:hover {
+  color: #0066cc;
+}
+.mention {
+  background-color: darkslategray;
+  color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  align-self: flex-start;
+  padding: 0.5rem;
+}
+
+.mention button {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+}
+
+.attachment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.attachment a {
+  height: 120px;
+  width: 120px;
+  position: relative;
+  background-color: black;
+}
+.attachment img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.attachment button {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background-color: gray;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
