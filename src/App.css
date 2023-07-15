@@ -39,7 +39,7 @@
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 .attachment-recieved {
   width: 100%;
@@ -59,7 +59,7 @@
   font-size: 0.8rem;
   text-align: start;
   width: 100%;
-  color: #007a5a;
+  color: #00c18d;
 }
 .kchat-message-box .user {
   display: none;
@@ -91,6 +91,8 @@
 }
 .message .message-time {
   font-size: 0.7rem;
+  align-self: flex-end;
+  color: gray;
 }
 .kchat-message-box .message-time {
   display: none;
